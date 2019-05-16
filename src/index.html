@@ -2,13 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>InventoryWebApplication</title>
+  <meta name="theme-color" content="#6610f2">
+  <title>Inventory Web Application</title>
   <base href="/">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="assets" href="https://firebasestorage.googleapis.com/v0/b/frcinventoryweb.appspot.com/o/imageAssets%2FFIRSTRegionalVert_Canada.png?alt=media&token=d85f3ea3-7de1-4a57-a980-7b240bb74921">
 </head>
 <body>
   <app-root></app-root>
 </body>
 </html>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDgmQsWquE3rsf3eDvWSgKtcrbdkS4vP0E",
+    authDomain: "frcinventoryweb.firebaseapp.com",
+    databaseURL: "https://frcinventoryweb.firebaseio.com",
+    projectId: "frcinventoryweb",
+    storageBucket: "frcinventoryweb.appspot.com",
+    messagingSenderId: "409193547090",
+    appId: "1:409193547090:web:35971cf350751c9f"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
