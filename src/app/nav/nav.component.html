@@ -1,11 +1,12 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
+      <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="!(isHandset$ | async)">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a routerLink="/item-list">Item List</a>
+      <a  mat-list-item routerLink="/item-list">Item List</a>
+      <a  mat-list-item routerLink="/add-item">Add Item(s)</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -16,11 +17,11 @@
         mat-icon-button
         (click)="drawer.toggle()"
         *ngIf="isHandset$ | async">
-        <mat-icon aria-label="nav toggle">Menue</mat-icon>
+        <mat-icon aria-label="nav toggle" style="margin: 2px;">Menu</mat-icon>
       </button>
-      <span>FRC Inventory Application</span>
+      <span style="margin-left: 15px;">FRC Inventory Application</span>
     </mat-toolbar>
-    <!-- Add Content Here -->
   </mat-sidenav-content>
 </mat-sidenav-container>
+
 <router-outlet></router-outlet>

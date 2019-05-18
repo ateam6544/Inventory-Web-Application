@@ -3,8 +3,7 @@
 }
 
 .sidenav {
-  width: 200px;
-  offset: 200px;
+  width: 150px
 }
 
 .sidenav .mat-toolbar {
@@ -16,10 +15,3 @@
   top: 0;
   z-index: 1;
 }
-
-/* a { display: block; text-align: center; 
-  background: 
-  rgb(67,80, 175); text-transform: uppercase; 
-  text-decoration: none; color: white; padding: 10px; 
-  border-radius: 3px;
-margin: 10px;} */
