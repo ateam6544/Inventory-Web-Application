@@ -12,13 +12,15 @@ import { ItemListComponent } from './item-list/item-list.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import 'hammerjs';
 import { AddItemComponent } from './add-item/add-item.component';
+import { BasketComponent } from './basket/basket.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     ItemListComponent,
-    AddItemComponent
+    AddItemComponent,
+    BasketComponent
   ],
   imports: [
     BrowserModule,

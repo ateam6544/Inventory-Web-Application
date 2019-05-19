@@ -18,4 +18,6 @@ export class NavComponent {
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
+  cartItems = 2;
+
 }

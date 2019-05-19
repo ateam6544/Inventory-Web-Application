@@ -17,12 +17,18 @@
         mat-icon-button
         (click)="drawer.toggle()"
         *ngIf="isHandset$ | async">
-        <!-- <mat-icon aria-label="nav toggle" style="margin: 2px;">Menu</mat-icon> -->
-        <mat-icon style="margin-left: 10px;">menu</mat-icon>
+        <mat-icon style="margin-left: 2px;">menu</mat-icon>
       </button>
-      <span style="margin-left: 15px;">FRC Inventory Application</span>
-      <mat-icon style="margin-left: 10px;">shopping_cart</mat-icon>
+      <p>FRC Inventory Application</p>
+      <ul style="list-style: none;">
+        <li>
+          <a class="right-basket" routerLink="/basket">
+              <mat-icon class="cartDecoration">shopping_cart</mat-icon>
+              [Cart {{cartItems}}]
+          </a>
+        </li>
+      </ul>
     </mat-toolbar>
-    <div style="padding: 20px;"><router-outlet></router-outlet></div>
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

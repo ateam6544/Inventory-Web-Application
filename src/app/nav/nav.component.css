@@ -15,3 +15,17 @@
   top: 0;
   z-index: 1;
 }
+
+.right-basket {
+  position: absolute;
+  right: 0px;
+  text-decoration: none;
+  align-self: flex-end;
+  color: white;
+  margin-right: 15px;
+}
+
+.cartDecoration{
+  font-size: 34px;
+  align-self: center;
+}
