@@ -1,4 +1,9 @@
 mat-form-field {
     margin-top: 10px;
-    margin-left: 170px;
+    margin-left: 10px;
 }
+
+.row {
+    display: flex;
+    flex-direction: row;
+  }

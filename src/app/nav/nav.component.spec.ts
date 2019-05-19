@@ -25,6 +25,7 @@ describe('NavComponent', () => {
         MatListModule,
         MatSidenavModule,
         MatToolbarModule,
+        BrowserAnimationsModule
       ]
     }).compileComponents();
   }));

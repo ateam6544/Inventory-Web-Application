@@ -14,8 +14,9 @@ export class ItemListComponent implements OnInit {
   }
 
   items = [
-    {id: 1, name: 'TalonSRX',},
-    {id: 2, name: 'VictorSPX'},
-    {id: 3, name: 'roboRio'}
+    {id: 1, name: 'Motors',},
+    {id: 2, name: 'Computers'},
+    {id: 3, name: 'Pneumatics'},
+    {id: 4, name: 'Tools'}
   ]
 }
