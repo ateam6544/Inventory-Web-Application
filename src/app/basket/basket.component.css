@@ -1,0 +1,8 @@
+.checkButtons{
+    float: left;
+    margin: 30px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+  }
