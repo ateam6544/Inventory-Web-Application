@@ -1,23 +1,12 @@
-<div class="row"><h4>Search Criteria</h4>
-  <mat-form-field>
-    <mat-label>Name</mat-label>
-    <mat-select>
-      <mat-option *ngFor="let item of items" [value]="item.id">
-        {{item.name}}
-      </mat-option>
-    </mat-select>
-  </mat-form-field></div>
+<div style="margin:10px;">
+<div>
+  <h2>Search </h2>
 
-<mat-list>
-    <mat-selection-list #item>
-        <mat-list-option *ngFor="let item of items">
-          {{item.name}}
-        </mat-list-option>
-      </mat-selection-list>
-      
-      <p>
-        Options selected: {{item.selectedOptions.selected.length}}
-      </p>
-   </mat-list>
-   <mat-icon>add_shopping_cart_icon</mat-icon>
-   <mat-icon>remove_shopping_cart</mat-icon>
+</div>
+<mat-list role="list">
+  <div class="row" *ngFor="let item of items">
+    <button value="{{item.id}}" style="height: 40px"><mat-icon>add_shopping_cart</mat-icon></button>
+    <mat-list-item role="listitem" style="margin-bottom: 20px;">{{item.name}}</mat-list-item>
+  </div>
+</mat-list>
+</div>
