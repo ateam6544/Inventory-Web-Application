@@ -1,4 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl, Validators} from '@angular/forms';
+
+export interface ItemElement {
+  id: number;
+  name: string;
+  location: string;
+  quantity: number;
+}
+
+const ITEM_DATA: ItemElement[] = [
+  {id: 1, name: 'TalonSRX', location: 'H2', quantity: 15},
+  {id: 1, name: 'VictorSPX', location: 'H2', quantity: 15},
+];
 
 @Component({
   selector: 'app-item-list',
@@ -13,10 +26,13 @@ export class ItemListComponent implements OnInit {
   ngOnInit() {
   }
 
-  items = [
-    {id: 1, name: 'Motors',},
-    {id: 2, name: 'Computers'},
-    {id: 3, name: 'Pneumatics'},
-    {id: 4, name: 'Tools'}
-  ]
+  displayedColumns: string[] = ['name', 'location', 'quantity'];
+  dataSource = ITEM_DATA;
+
+  searchValue = '';
+
+  onAddItem(){
+
+  }
+
 }

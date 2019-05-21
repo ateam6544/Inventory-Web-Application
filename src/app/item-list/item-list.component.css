@@ -7,3 +7,17 @@ mat-form-field {
     display: flex;
     flex-direction: row;
   }
+
+  table {
+    width: 100%;
+  }
+  .searchField{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+  }
+
+  .searchArea{
+    margin: 10px;
+    padding: 5px;
+  }
+  
