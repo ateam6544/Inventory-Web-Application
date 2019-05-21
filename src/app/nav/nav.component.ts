@@ -20,4 +20,7 @@ export class NavComponent {
 
   cartItems = 2;
 
+  onClickShopping(){
+  }
+
 }

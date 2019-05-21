@@ -19,15 +19,22 @@
         *ngIf="isHandset$ | async">
         <mat-icon style="margin-left: 2px;">menu</mat-icon>
       </button>
-      <p>FRC Inventory Application</p>
-      <ul style="list-style: none;">
-        <li>
-          <a class="right-basket" routerLink="/basket">
-              <mat-icon class="cartDecoration">shopping_cart</mat-icon>
-              [Cart {{cartItems}}]
-          </a>
-        </li>
-      </ul>
+        <mat-toolbar-row>
+            <span>FRC Inventory Application</span>
+          <span class="example-spacer"></span>
+          <button mat-icon-button routerLink="/basket">
+            <mat-icon>shopping_cart</mat-icon>
+          </button>
+          <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>more_horizontal</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <mat-icon>person_icon</mat-icon>
+              <span>Login</span>
+            </button>
+          </mat-menu>
+        </mat-toolbar-row>
     </mat-toolbar>
     <router-outlet></router-outlet>
   </mat-sidenav-content>

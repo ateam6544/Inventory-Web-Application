@@ -10,8 +10,23 @@
       rel="stylesheet">
   <link rel="icon" type="assets" href="https://firebasestorage.googleapis.com/v0/b/frcinventoryweb.appspot.com/o/imageAssets%2FFIRSTRegionalVert_Canada.png?alt=media&token=d85f3ea3-7de1-4a57-a980-7b240bb74921">
 </head>
+<style>
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+</style>
 <body style="fill: blanchedalmond">
-  <app-root></app-root>
+  <app-root><div style="
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #135480; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+    margin-top: 10%;
+  "></div><center style="color:#133f80;font-size: 20px; ">Loading, Please Wait.</center></app-root>
 </body>
 </html>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
