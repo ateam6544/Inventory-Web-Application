@@ -26,7 +26,7 @@ export class ItemListComponent implements OnInit {
   ngOnInit() {
   }
 
-  displayedColumns: string[] = ['name', 'location', 'quantity'];
+  displayedColumns: string[] = ['name', 'location', 'quantity', 'actions'];
   dataSource = ITEM_DATA;
 
   searchValue = '';

@@ -15,7 +15,7 @@ export class AddItemComponent {
     seller: [null, Validators.required],
     location: [null, Validators.required],
     category: [null, Validators.required],
-    currency: ['free', Validators.required]
+    currency: [null, Validators.required]
   });
 
   hasUnitNumber = false;
@@ -42,7 +42,8 @@ export class AddItemComponent {
   constructor(private fb: FormBuilder) {}
 
   onSubmit() {
-    
-    alert('Item Added Succesfully');
+    if(this.itemForm.valid){
+      alert('Item Added Succesfully');
+    }
   }
 }

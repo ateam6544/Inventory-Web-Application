@@ -13,6 +13,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import 'hammerjs';
 import { AddItemComponent } from './add-item/add-item.component';
 import { BasketComponent } from './basket/basket.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { ManageAccountComponent } from './manage-account/manage-account.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { BasketComponent } from './basket/basket.component';
     NavComponent,
     ItemListComponent,
     AddItemComponent,
-    BasketComponent
+    BasketComponent,
+    LoginComponent,
+    RegisterComponent,
+    ManageAccountComponent
   ],
   imports: [
     BrowserModule,
