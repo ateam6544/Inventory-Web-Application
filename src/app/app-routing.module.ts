@@ -6,6 +6,7 @@ import { BasketComponent } from './basket/basket.component'
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ManageAccountComponent } from './manage-account/manage-account.component';
+import { ModelViewerComponent } from './model-viewer/model-viewer.component';
 const routes: Routes = [
   {path: 'item-list', component: ItemListComponent},
   {path: 'add-item', component: AddItemComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'manage-account', component: ManageAccountComponent},
+  {path: 'model-viewer', component: ModelViewerComponent},
 ];
 
 @NgModule({

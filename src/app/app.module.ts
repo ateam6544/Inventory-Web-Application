@@ -16,6 +16,7 @@ import { BasketComponent } from './basket/basket.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ManageAccountComponent } from './manage-account/manage-account.component';
+import { ModelViewerComponent } from './model-viewer/model-viewer.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ManageAccountComponent } from './manage-account/manage-account.componen
     BasketComponent,
     LoginComponent,
     RegisterComponent,
-    ManageAccountComponent
+    ManageAccountComponent,
+    ModelViewerComponent
   ],
   imports: [
     BrowserModule,
