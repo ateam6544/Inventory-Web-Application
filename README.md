@@ -1,5 +1,4 @@
 # InventoryWebApplication
-[![Build Status](https://travis-ci.org/{ORG-or-USERNAME}/{REPO-NAME}.png?branch=master)](https://travis-ci.org/{ORG-or-USERNAME}/{REPO-NAME})
 This is an angular based web application. This web app can be used to manage inventory items.
 
 ## Actions
