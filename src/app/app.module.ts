@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatTableModule, MatPaginatorModule, MatSortModule, MatMenuModule, MatInputModule, MatRadioModule, MatCardModule, MatProgressSpinnerModule} from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatTableModule, MatPaginatorModule, MatSortModule, MatMenuModule, MatInputModule, MatRadioModule, MatCardModule, MatProgressBarModule} from '@angular/material';
 import { ItemListComponent } from './item-list/item-list.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import 'hammerjs';
@@ -17,6 +17,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ManageAccountComponent } from './manage-account/manage-account.component';
 import { ModelViewerComponent } from './model-viewer/model-viewer.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ModelViewerComponent } from './model-viewer/model-viewer.component';
     LoginComponent,
     RegisterComponent,
     ManageAccountComponent,
-    ModelViewerComponent
+    ModelViewerComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +53,7 @@ import { ModelViewerComponent } from './model-viewer/model-viewer.component';
     MatRadioModule,
     MatCardModule,
     ReactiveFormsModule,
-    MatProgressSpinnerModule
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
