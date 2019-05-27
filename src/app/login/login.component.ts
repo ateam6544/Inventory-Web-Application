@@ -16,12 +16,11 @@ export class LoginComponent implements OnInit {
   progress = 20;
 
   loginForm = this.fb.group({
-    
+    email: ['', [Validators.email, Validators.required]],
   });
 
   onSubmit() {
     if(this.loginForm.valid){
     }
   }
-
 }
