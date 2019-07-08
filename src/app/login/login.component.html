@@ -14,21 +14,21 @@
               <mat-card-content>
                   <div class="col" style="margin-left: 15px;">
                       <div class="row">
-                          <mat-form-field>
+                          <mat-form-field class="full-width">
                               <input matInput placeholder="Enter your email" [formControl]="email" required>
                               <mat-error *ngIf="loginForm.controls['email']"></mat-error>
                           </mat-form-field>
                       </div>
                       <div class="row">
-                        <mat-form-field>
+                        <mat-form-field class="full-width">
                             <input matInput placeholder="Enter your Password" [formControl]="password" required>
                             <mat-error *ngIf="loginForm.controls['password']"></mat-error>
                         </mat-form-field>
                     </div>
                     </div>
               </mat-card-content>
-              <mat-card-actions>
-                <button mat-raised-button color="primary" type="submit" style="width: 90%;">Submit</button>
+              <mat-card-actions>bt
+                <button mat-raised-button class="full-width" color="primary" type="submit">Submit</button>
               </mat-card-actions>
             </form>
           </mat-card>

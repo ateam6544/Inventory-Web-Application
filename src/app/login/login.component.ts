@@ -13,10 +13,9 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-  progress = 20;
-
   loginForm = this.fb.group({
     email: ['', [Validators.email, Validators.required]],
+    password: ['', [Validators.required]],
   });
 
   onSubmit() {
