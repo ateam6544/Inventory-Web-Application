@@ -4,13 +4,12 @@ import {FormControl, Validators} from '@angular/forms';
 export interface ItemElement {
   id: number;
   name: string;
-  location: string;
   quantity: number;
 }
 
 const ITEM_DATA: ItemElement[] = [
-  {id: 1, name: 'TalonSRX', location: 'H2', quantity: 15},
-  {id: 1, name: 'VictorSPX', location: 'H2', quantity: 15},
+  {id: 1, name: 'TalonSRX', quantity: 15},
+  {id: 1, name: 'VictorSPX',quantity: 15},
 ];
 
 @Component({
